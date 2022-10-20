@@ -6,3 +6,8 @@ from django.urls import include, path
 urlpatterns = [
     path("admin/", admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+admin.site.site_header = "Real Estate Admin"
+admin.site.site_title = "Real Estate Admin Portal"
+admin.site.site_index = "Welcome to Real Estate Admin Portal"
