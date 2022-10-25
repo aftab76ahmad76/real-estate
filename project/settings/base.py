@@ -48,6 +48,8 @@ LOCAL_APPS = [
     "apps.profiles",
     "apps.ratings",
     "apps.users",
+    "apps.properties",
+    "apps.enquiries",
 ]
 
 SITE_ID = 1
