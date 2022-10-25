@@ -64,7 +64,7 @@ REST_FRAMEWORK = {
 from datetime import timedelta
 
 SIMPLE_JWT = {
-    "AUTH_HEADER_TYPES": ("BEARER", "JWT"),
+    "AUTH_HEADER_TYPES": ("Bearer"),
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=120),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
     "SIGNING_KEY": env("SIGNING_KEY"),

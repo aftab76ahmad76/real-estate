@@ -20,10 +20,8 @@ class Profile(TimeStampUUID):
     phone_number = PhoneNumberField(
         verbose_name=_("Phone Number"), max_length=30, default="+923024242421"
     )
-    about_me = (
-        models.TextField(
-            verbose_name=_("About Me"), default="Say something about yourself"
-        ),
+    about_me = models.TextField(
+        verbose_name=_("About Me"), default="Say something about yourself"
     )
     lisence = models.CharField(
         verbose_name=_("Real Estate Lisence"), max_length=255, null=True, blank=True
